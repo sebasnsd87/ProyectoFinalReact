@@ -1,0 +1,42 @@
+[
+    {
+        "id":1,
+        "nombre":"Amoladora Skill",
+        "precio":49000,
+        "img":"/img/amoladora.jpg",
+        "descripcion":"Amoladora de 900W ideal para el trabajo en casa",
+        "stock":20
+    },
+    {
+        "id":2,
+        "nombre":"Taladro Makita 700W",
+        "precio":69000,
+        "img":"/img/makita.jpg",
+        "descripcion":"Taladro Makita con mandril de 13mm",
+        "stock":10
+    },
+    {
+        "id":3,
+        "nombre":"Desmalezadora Sthil Fs460",
+        "precio":350000,
+        "img":"/img/Sthil.webp",
+        "descripcion":"Motoguadaña desmalezadora con gran potencia para el trabajo diario",
+        "stock":5
+    },
+    {
+        "id":4,
+        "nombre":"Carretilla",
+        "precio":45000,
+        "img":"/img/carretilla.jpg",
+        "descripcion":"Carretilla con rueda de goma",
+        "stock":20
+    },
+    {
+        "id":5,
+        "nombre":"Escalera 6 escalones",
+        "precio":55000,
+        "img":"/img/escalera.jpg",
+        "descripcion":"Escalera liviana de aluminio, ideal para el hogar",
+        "stock":6
+    }
+]

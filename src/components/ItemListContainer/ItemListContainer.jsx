@@ -1,9 +1,32 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
+import ItemList from '../ItemList/ItemList';
 
-const ItemListContainer = ({greeting}) => {
+const ItemListContainer = () => {
+
+    const [products,setProducts] = useState([]);
+
+    useEffect(()=>{
+
+        const fetchData = () => {
+            return fetch("/data/products.json")
+            .then((response) => response.json())
+            .then((data)=>{
+                setProducts(data)
+            })
+            .catch((error)=>console.log(error))
+        }
+
+        fetchData()
+
+    },[])
+
     return (
         <>
-         <h1> {greeting} </h1>   
+           {products.length == 0
+           ?
+            <h1>CARGANDO...</h1>
+            :
+            <ItemList products={products}/>}
         </>
     );
 };
