@@ -8,7 +8,7 @@ function NavBar() {
 
   return (
     <>
-    <h1>FERRETERIA EMILIO E-COMMERCE</h1>
+    <h2>FERRETERIA EMILIO E-COMMERCE</h2>
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
         <Navbar.Brand href="#home">INICIO</Navbar.Brand>
