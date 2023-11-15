@@ -5,6 +5,7 @@
         "precio":49000,
         "img":"/img/amoladora.jpg",
         "descripcion":"Amoladora de 900W ideal para el trabajo en casa",
+        "categoria": "Amoladora",
         "stock":20
     },
     {
@@ -13,6 +14,7 @@
         "precio":69000,
         "img":"/img/makita.jpg",
         "descripcion":"Taladro Makita con mandril de 13mm",
+        "categoria": "Taladro",
         "stock":10
     },
     {
@@ -21,6 +23,7 @@
         "precio":350000,
         "img":"/img/Sthil.webp",
         "descripcion":"Motoguadaña desmalezadora con gran potencia para el trabajo diario",
+        "categoria": "Desmalezadora",
         "stock":5
     },
     {
@@ -29,6 +32,7 @@
         "precio":45000,
         "img":"/img/carretilla.jpg",
         "descripcion":"Carretilla con rueda de goma",
+        "categoria": "Carretilla",
         "stock":20
     },
     {
@@ -37,6 +41,7 @@
         "precio":55000,
         "img":"/img/escalera.jpg",
         "descripcion":"Escalera liviana de aluminio, ideal para el hogar",
+        "categoria": "Escaleras",
         "stock":6
     }
 ]

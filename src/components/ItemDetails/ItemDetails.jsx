@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import ItemCount from '../ItemCount/ItemCount';
 import { Link } from 'react-router-dom';
 
-const ItemDetail = ({producto}) => {
+const ItemDetail = ({product}) => {
 
     const [quantity,setQuantity] = useState(0)
 
@@ -12,15 +12,15 @@ const ItemDetail = ({producto}) => {
     
     return (
         <div>
-            <img src={producto.img} alt={producto.nombre} />
-            <h2>{producto.nombre}</h2>
-            <p>Stock: {producto.stock}</p>
-            <p>Precio: {producto.precio}</p>
-            <p>Categoria: {producto.categoria}</p>
-            <p>Descripción: {producto.descripcion}</p>
+            <img src={product.img} alt={product.nombre} />
+            <h2>{product.nombre}</h2>
+            <p>Stock: {product.stock}</p>
+            <p>Precio: {product.precio}</p>
+            <p>Categoria: {product.categoria}</p>
+            <p>Descripción: {product.descripcion}</p>
             {quantity 
             == 0 ? 
-            <ItemCount initial={1} stock={producto.stock} onAdd={onAdd}/>
+            <ItemCount initial={1} stock={product.stock} onAdd={onAdd}/>
             :
             <Link to={"/Cart"}>Ir al carrito</Link>
             }
