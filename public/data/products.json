@@ -37,11 +37,56 @@
     },
     {
         "id":5,
-        "nombre":"Escalera 6 escalones",
-        "precio":55000,
-        "img":"/img/escalera.jpg",
-        "descripcion":"Escalera liviana de aluminio, ideal para el hogar",
+        "nombre":"Amoladora Makita",
+        "precio":69000,
+        "img":"/img/amolaMakita.jpg",
+        "descripcion":"Amoladora de 1100W ideal para el trabajo pesado",
+        "categoria": "Amoladora",
+        "stock":10
+    },
+    {
+        "id":6,
+        "nombre":"Carretilla Rueda Pvc",
+        "precio":19000,
+        "img":"/img/carretillaruedapvc.webp",
+        "descripcion":"Carretilla caja pvc y rueda pvc",
+        "categoria": "Carretilla",
+        "stock":15
+    },
+    {
+        "id":7,
+        "nombre":"Escalera doble de Madera",
+        "precio":25000,
+        "img":"/img/escaleramadera.jpg",
+        "descripcion":"Escalera doble de madera para pintor",
         "categoria": "Escaleras",
-        "stock":6
+        "stock":10
+    },
+    {
+        "id":8 ,
+        "nombre":"Desmalezadora Husqvarna",
+        "precio":490000,
+        "img":"/img/husqvarna.webp",
+        "descripcion":"Desmalezadora para el trabajo diario de limpieza de patios, chacras, etc",
+        "categoria": "Desmalezadora",
+        "stock":20
+    },
+    {
+        "id":9,
+        "nombre":"Escalera de Aluminio",
+        "precio":39000,
+        "img":"/img/escalera.jpg",
+        "descripcion":"Escalera doble de Aluminio para pintor",
+        "categoria": "Escaleras",
+        "stock":5
+    },
+    {
+        "id":9,
+        "nombre":"Taladro Skill 700W",
+        "precio":45000,
+        "img":"/img/talaSkil.jpg",
+        "descripcion":"Taladro Skill 700w, ideal para el hogar y realizar pequeñas reparaciones",
+        "categoria": "Taladro",
+        "stock":10
     }
 ]
