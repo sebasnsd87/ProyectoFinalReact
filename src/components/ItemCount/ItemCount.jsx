@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import "./itemCount.css"
 
 const ItemCount = ({initial,stock,onAdd}) => {
 
@@ -18,7 +19,7 @@ const ItemCount = ({initial,stock,onAdd}) => {
         }
     }
     return (
-        <div>
+        <div className='boton'>
             <button onClick={increment}>Agregar</button>
             <span>{count}</span>
             <button onClick={decrement}>Eliminar</button>

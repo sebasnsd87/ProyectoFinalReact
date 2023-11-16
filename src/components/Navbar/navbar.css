@@ -1,0 +1,13 @@
+.titulo{
+    text-align: center;
+}
+
+.navegacion{
+    display: flex;
+    justify-content: space-between;
+    .drop{
+       .lista{
+        text-decoration: none;
+       }
+    }
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import ItemCount from '../ItemCount/ItemCount';
 import { Link } from 'react-router-dom';
+import "./item.css"
 
 const Item = ({product}) => {
 
@@ -16,11 +17,11 @@ const Item = ({product}) => {
                 <h2>{product.nombre}</h2>
             </Link>
 
-            <img src={product.img} alt="" />
+            <img className='imagen' src={product.img} alt="" />
             
         </div>  
 
-        <ItemCount initial={1} stock={10} onAdd={onAdd}/>
+        <ItemCount className='boton' initial={1} stock={10} onAdd={onAdd}/>
         </>
         
     );

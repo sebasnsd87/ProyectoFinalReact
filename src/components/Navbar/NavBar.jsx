@@ -4,6 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import CardWidget from "../CardWidget/CardWidget";
 import {Link, NavLink} from 'react-router-dom';
+import "./navbar.css"
 
 function NavBar() {
 
@@ -17,9 +18,9 @@ function NavBar() {
 
   return (
     <>
-    <h2>FERRETERIA EMILIO E-COMMERCE</h2>
+    <h2 className="titulo">FERRETERIA EMILIO E-COMMERCE</h2>
     <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
+      <Container className="navegacion">
         <Navbar.Brand as={Link} to = {"/"}>INICIO</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -27,10 +28,10 @@ function NavBar() {
             <Nav.Link as={Link} to = {"/Ubicacion"}>UBICACION</Nav.Link>
             <Nav.Link as={Link} to = {"/Contacto"}>CONTACTO</Nav.Link>
             <NavDropdown title="PRODUCTOS" id="basic-nav-dropdown">
-              <ul>
+              <ul className="drop">
                 {enlaces.map((e,id)=>
                 
-                <li key={id}>
+                <li className="lista" key={id}>
                   <Link to={`${e}`}>
                     {e}
                   </Link>
