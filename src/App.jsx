@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer";
 import Contacto from "./components/Contacto/Contacto";
 import Ubicacion from "./components/Ubicacion/Ubicacion";
 import Cart from "./components/Cart/Cart";
+import Error from "./components/Error/Error";
 
 function App() {
   return (
