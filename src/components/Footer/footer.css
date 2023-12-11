@@ -1,0 +1,29 @@
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.piedepagina {
+    display: flex;
+    gap: 10px;
+}
+
+.piedepagina img {
+    width: 30px;
+    height: 30px;
+}
+
+.tarjetas img {
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.Copy {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}

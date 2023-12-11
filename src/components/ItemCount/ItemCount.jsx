@@ -18,12 +18,18 @@ const ItemCount = ({initial,stock,onAdd}) => {
             setCount(count-1)
         }
     }
+
+    const handleAddToCart = () => {
+        onAdd(count); // Asumiendo que esta función actualiza el contexto del carrito
+        console.log('Cantidad enviada al carrito:', count);
+    };
+
     return (
         <div className='boton'>
             <button onClick={increment}>Agregar</button>
             <span>{count}</span>
             <button onClick={decrement}>Eliminar</button>
-            <button onClick={()=>{onAdd(count)}}>Agregar al carrito</button>
+            <button onClick={handleAddToCart}>Agregar al carrito</button>
         </div>
     );
 };

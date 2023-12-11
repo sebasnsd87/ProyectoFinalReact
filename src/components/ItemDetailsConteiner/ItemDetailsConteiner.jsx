@@ -11,10 +11,12 @@ const ItemDetailContainer = () => {
             return fetch("/data/products.json")
                 .then((response) => response.json())
                 .then((data) => {
-                    const foundProduct = data.find((item) => item.id == idProduct);
+                    const foundProduct = data.find((item) => item.id === parseInt(idProduct));
                     setProduct(foundProduct);
                 })
-                .catch((error) => console.log(error));
+                .catch((error) => {
+                    console.error('Error fetching data:', error);
+                });
         };
 
         fetchData();
@@ -22,9 +24,10 @@ const ItemDetailContainer = () => {
 
     return (
         <div>
-            {product ? <ItemDetail product={product} /> : <p>CARGANDO..</p>}
+            {product ? <ItemDetail product={product} /> : <p>CARGANDO...</p>}
         </div>
     );
 };
 
 export default ItemDetailContainer;
+

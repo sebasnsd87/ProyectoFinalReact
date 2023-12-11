@@ -1,13 +1,36 @@
-.titulo{
+
+
+.titulo {
     text-align: center;
+    color: #333;
+    margin-top: 20px;
 }
 
-.navegacion{
+.navegacion {
     display: flex;
     justify-content: space-between;
-    .drop{
-       .lista{
-        text-decoration: none;
-       }
-    }
+    align-items: center;
+}
+
+.drop {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista {
+    padding: 10px 0;
+}
+
+.lista a {
+    text-decoration: none;
+    color: #333;
+}
+
+.lista a:hover {
+    color: #007bff;
+}
+
+.bg-body-tertiary {
+    background-color: #f8f9fa;
 }
