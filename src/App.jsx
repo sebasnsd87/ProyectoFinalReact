@@ -12,9 +12,8 @@ import Checkout from "./components/Checkout/Checkout";
 import { Carousel } from "react-bootstrap";
 import { CartProvider } from "./Context/CartContext";
 
-import { getFirestore, collection, getDocs } from "firebase/firestore";
+function App() {   
 
-function App() {
   return (
     <>
       <BrowserRouter>
@@ -46,6 +45,7 @@ function App() {
             <Route path="/Checkout" element={<Checkout />} />
             <Route path="/item/:idProduct" element={<ItemDetailContainer />} />
             <Route path="/:categoryId" element={<ItemListContainer />} />
+            <Route path="/Checkout" element={<Checkout/>}/>
             <Route path="*" element={<Error />} />
           </Routes>
 

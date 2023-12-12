@@ -45,7 +45,6 @@ const removeItem = (id) => {
 
   const carritoActualizado = cart.filter(prod => prod.producto.id !== id);
 
-  // Mostrar SweetAlert para confirmar la eliminación del producto
   Swal.fire({
     title: '¿Estás seguro?',
     text: 'Esta acción eliminará el producto del carrito',
@@ -55,7 +54,7 @@ const removeItem = (id) => {
     cancelButtonText: 'Cancelar'
   }).then((result) => {
     if (result.isConfirmed) {
-      // El usuario ha confirmado la eliminación del producto
+   
 
       setCart(carritoActualizado);
       setCantidadTotal(prev => prev - productoEliminado.cantidad);
@@ -67,7 +66,7 @@ const removeItem = (id) => {
         'success'
       );
     } else {
-      // El usuario ha cancelado la eliminación del producto
+    
       toast.info('La eliminación del producto ha sido cancelada');
     }
   });
