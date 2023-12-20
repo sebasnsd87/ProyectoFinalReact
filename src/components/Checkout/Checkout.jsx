@@ -1,6 +1,8 @@
 import React, { useState, useContext } from "react";
 import {collection, addDoc, updateDoc, doc, getDoc, getFirestore} from "firebase/firestore";
 import { CartContext } from "../../Context/CartContext";
+import { Link } from "react-router-dom";
+import "./checkout.css"
 
 const Checkout = () => {
   const [nombre, setNombre] = useState("");
@@ -10,6 +12,8 @@ const Checkout = () => {
   const [confirmacionEmail, setConfirmacionEmail] = useState("");
   const [error, setError] = useState("");
   const [ordenId, setOrdenId] = useState("");
+  
+
 
   const { cart, total, clearCart } = useContext(CartContext);
 
@@ -23,6 +27,11 @@ const Checkout = () => {
 
     if (email !== confirmacionEmail) {
       setError("Los campos de EMAIL no coinciden");
+      return;
+    }
+
+    if (cart.length === 0) {
+      setError("El carrito está vacío");
       return;
     }
 
@@ -70,12 +79,20 @@ const Checkout = () => {
         console.log("No se pudo actualizar el stock", error)
         setError("No se puede actualizar el stock, intente de nuevo")
     });
-    
+
+    setNombre("");
+    setApellido("");
+    setTelefono("");
+    setEmail("");
+    setConfirmacionEmail("");
+
   };
+
+
 
   return (
     <div>
-      <h2>INGRESA TUS DATOS</h2>
+      <h2 className="tituloChek">INGRESA TUS DATOS</h2>
       <form onSubmit={manejarFormulario} className="formulario">
         {cart.map((producto) => (
           <div key={producto.producto.id}>
@@ -115,6 +132,7 @@ const Checkout = () => {
 
         {error && <p style={{ color: "red" }}>{error}</p>}
         <button type="submit">COMPRAR</button>
+        <Link to="/" className="button-style">Ir al Inicio</Link>
         {ordenId && (
           <strong className="orderId">
             GRACIAS por tu compra!! Numero de orden: {ordenId} {""}
