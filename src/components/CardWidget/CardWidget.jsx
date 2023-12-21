@@ -7,7 +7,7 @@ import "./cardwidget.css"
 
 const CardWidget = () => {
     const { cantidadTotal } = useContext(CartContext);
-    console.log('Cantidad total en el carrito:', cantidadTotal);
+  
 
     return (
         <div className="carrito">
