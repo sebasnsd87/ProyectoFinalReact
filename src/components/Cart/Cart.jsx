@@ -39,35 +39,3 @@ const Cart = () => {
 
 export default Cart;
 
-.cart-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.cart-items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.cart-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px;
-}
-
-.item-image {
-  max-height: 200px;
-  width: auto;
-}
-
-.item-details {
-  margin-top: 10px;
-}
-
-button {
-  margin-top: 10px;
-}
